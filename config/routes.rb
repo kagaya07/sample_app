@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'todolists/:id/edit' => 'todolists#edit',as: 'edit_todolist'
   get 'todolists' => 'todolists#index'
   get 'todolists/:id' => 'todolists#show',as: 'todolist'
+  delete 'todolists/:id' => 'todolists#destroy',as: 'destroy_todolist'
 end
